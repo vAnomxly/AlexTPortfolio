@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Accountability Check</h1>
+        <p class="guide">To start off type in a "Yes" or "No" question that will challenge whether you've been productive or not.
+        </p>
+        <p style="margin:5px;"><b>For example:</b> "<i>Have you done the dishes?</i>" or "<i>Have you gone on your morning run?</i>"</p>
+        <div id="error"></div>
+        <div id='container'>
+            <form >
+                <div id="qdiv" >
+                    <label for="name"><b>Question:</b></label>
+                    <input class="question" name="question" type="text" autocomplete="off" placeholder="Type a question here">
+                    <br>
+                </div>
+                <button id="fbutton" type="button" onclick="append()" >Next Question</button>
+                <button id="done" type="button" onclick="send()">Make Quiz</button>
+                <button id="new" type="submit" >New Quiz</button>
+            </form>
+        </div>
+        
+        <form id="qform">
+            <div id="quiz">
+                
+            </div>
+            <button type="button"  class="yes">Yes</button>
+            <button type="button"  class="no">No</button>
+            
+            
+        </form>
+        
+        <div id="piechart"></div>
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
